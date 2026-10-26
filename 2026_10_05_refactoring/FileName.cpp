@@ -2,25 +2,23 @@
 
 int main()
 {
-    system("chcp 65001 > nul");
-
-    const int SIZE = 10;
-    double a[SIZE];
-    for (int i = 0; i < SIZE; i++)
+    const int size = 10;
+    int arr[size];
+    for (int i = 0; i < size; i++)
     {
         std::cout << "Введите элемент: ";
-        std::cin >> a[i];
+        std::cin >> arr[i];
     }
 
     bool is_increas = true;
     bool is_decreas = true;
-    for (int i = 0; i < SIZE - 1; ++i)
+    for (int i = 0; i < size - 1; ++i)
     {
-        if (a[i] > a[i + 1])
+        if (arr[i] > arr[i + 1])
         {
             is_increas = false;
         }
-        if (a[i] < a[i + 1]) {
+        if (arr[i] < arr[i + 1]) {
             is_decreas = false;
         }
 
