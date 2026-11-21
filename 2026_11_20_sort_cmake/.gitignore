@@ -1,5 +1,4 @@
 # buskoi
-.vscode/
 
 # Prerequisites
 *.d
@@ -44,7 +43,6 @@
 
 # Build directories
 build/
-build_ninja/
 Build/
 build-*/
 
@@ -72,4 +70,5 @@ vcpkg_installed/
 Testing/
 .cache/
 lib/
-
+build_ninja/
+.vscode/
