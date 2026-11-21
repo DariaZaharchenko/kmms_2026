@@ -1,4 +1,5 @@
 # buskoi
+.vscode/
 lib/
 
 # Prerequisites
@@ -71,4 +72,6 @@ vcpkg_installed/
 Testing/
 .cache/
 lib/
-build/
+build.ninja
+lib/
+
