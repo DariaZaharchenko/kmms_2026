@@ -201,3 +201,27 @@ void biv::shell_sort(int* arr, const int size) {
         step /= 2;
     }
 }
+
+void biv::insert_sort_binary_search(int* const arr, const int size) {
+    for (int i = 1; i < size; i++) {
+        int x = arr[i];
+
+        int beg = 0;
+        int end = i - 1;
+        while (beg < end) {
+            int mid = (beg + end) / 2;
+            if (x < arr[mid]) {
+                end = mid;
+            } else {
+                beg = mid + 1;
+            }
+        }
+
+        if (x < arr[beg]) {
+            for (int j = i; j > beg; j--) {
+                arr[j] = arr[j - 1];
+            }
+            arr[beg] = x;
+        }
+    }
+}

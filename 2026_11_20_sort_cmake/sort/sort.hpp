@@ -11,4 +11,5 @@ namespace biv {
     void selection_sort(int* const arr, const int size);
     void insert_sort(int* const arr, const int size);
     void shell_sort(int* const arr, const int size);
+    void insert_sort_binary_search(int* const arr, const int size);
 }

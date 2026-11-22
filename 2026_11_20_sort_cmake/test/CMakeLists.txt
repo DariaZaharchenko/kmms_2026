@@ -133,3 +133,16 @@ target_link_libraries(test_shell_sort
 )
 
 add_test(test_shell_sort test_shell_sort)
+
+set(SOURCES
+    insert_sort_binary_search.cpp
+)
+
+add_executable(insert_sort_binary_search ${SOURCES})
+
+target_link_libraries(insert_sort_binary_search
+    gtest
+    ${SORT_LIB}
+)
+
+add_test(insert_sort_binary_search insert_sort_binary_search)
